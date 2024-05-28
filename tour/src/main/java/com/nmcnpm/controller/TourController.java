@@ -9,6 +9,7 @@ import java.io.IOException;
 
 @WebServlet(value = {"/tour"})
 public class TourController extends HttpServlet {
+    // Lớp này chỉ có trách nhiệm là load trang JSP lên
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/tour.jsp").forward(req, resp);

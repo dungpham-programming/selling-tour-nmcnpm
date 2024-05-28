@@ -5,8 +5,12 @@ import java.util.List;
 
 public class Tour {
     private int id;
+    private int tourCateId;
     private String name;
     private String description;
+    private String vehicle;
+    private String starting;
+    private String destination;
     private String travelTime;
     private double price;
     private String timeline;
@@ -27,6 +31,14 @@ public class Tour {
         this.id = id;
     }
 
+    public int getTourCateId() {
+        return tourCateId;
+    }
+
+    public void setTourCateId(int tourCateId) {
+        this.tourCateId = tourCateId;
+    }
+
     public String getName() {
         return name;
     }
@@ -41,6 +53,30 @@ public class Tour {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(String vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public String getStarting() {
+        return starting;
+    }
+
+    public void setStarting(String starting) {
+        this.starting = starting;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
     public String getTravelTime() {

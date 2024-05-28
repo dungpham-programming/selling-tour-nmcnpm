@@ -24,11 +24,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="<c:url value="template/tour/lib/owlcarousel/assets/owl.carousel.min.css"/>" rel="stylesheet">
-    <link href="<c:url value="template/tour/lib/lightbox/css/lightbox.min.css"/>" rel="stylesheet">
-
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<c:url value="template/tour/css/bootstrap.min.css"/>" rel="stylesheet">
 
@@ -142,53 +137,13 @@
             <h5 class="section-title px-3">Packages</h5>
             <h1 class="mb-0">Awesome Packages</h1>
         </div>
-        <div class="packages-carousel owl-carousel">
-            <div class="packages-item">
+        <div class="tour-container row">
+            <div class="packages-item col-lg-4 col-md-6 mb-4">
                 <div class="packages-img">
-                    <img src="img/packages-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                         style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice
-                            - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
-                    </div>
-                    <div class="packages-price py-2 px-4">$349.00</div>
-                </div>
-                <div class="packages-content bg-light">
-                    <div class="p-4 pb-0">
-                        <h5 class="mb-0">Venice - Italy</h5>
-                        <small class="text-uppercase">Hotel Deals</small>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                        </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
-                    </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
-                        <div class="col-6 text-start px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
-                        </div>
-                        <div class="col-6 text-end px-0">
-                            <a href="#" class="btn-hover btn text-white py-2 px-4">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="packages-item">
-                <div class="packages-img">
-                    <img src="img/packages-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                         style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice
-                            - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
+                    <img src="<c:url value="template/tour/img/packages-2.jpg"/>" class="img-fluid w-100 rounded-top" alt="Image">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
                         <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
                     </div>
                     <div class="packages-price py-2 px-4">$449.00</div>
@@ -204,8 +159,7 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
                     <div class="row bg-primary rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
@@ -217,15 +171,12 @@
                     </div>
                 </div>
             </div>
-            <div class="packages-item">
+            <div class="packages-item col-lg-4 col-md-6 mb-4">
                 <div class="packages-img">
-                    <img src="img/packages-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                         style="width: 100%; bottom: 0; left: 0; z-index: 5;">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice
-                            - Italy</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
+                    <img src="<c:url value="template/tour/img/packages-3.jpg"/>" class="img-fluid w-100 rounded-top" alt="Image">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
                         <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
                     </div>
                     <div class="packages-price py-2 px-4">$549.00</div>
@@ -241,8 +192,7 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
                     <div class="row bg-primary rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
@@ -254,14 +204,12 @@
                     </div>
                 </div>
             </div>
-            <div class="packages-item">
+            <div class="packages-item col-lg-4 col-md-6 mb-4">
                 <div class="packages-img">
-                    <img src="img/packages-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                         style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                    <img src="<c:url value="template/tour/img/packages-1.jpg"/>" class="img-fluid w-100 rounded-top" alt="Image">
+                    <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
                         <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Thayland</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3
-                            days</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>3 days</small>
                         <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2 Person</small>
                     </div>
                     <div class="packages-price py-2 px-4">$649.00</div>
@@ -277,8 +225,7 @@
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia
-                            quae illum aperiam fugiat voluptatem repellat</p>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
                     <div class="row bg-primary rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
@@ -522,7 +469,18 @@
 
 <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-<script src="<c:url value="template/tour/ajax-render/tour-ajax.js"/>"></script>
+<%-- Custom Format Price --%>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script>
+    // Set lại cách định dạng dấu phân cách hàng nghìn và thập phân
+    numeral.register('locale', 'custom', {
+        delimiters: {
+            thousands: '.',
+            decimal: ','
+        }
+    });
+    numeral.locale('custom');
+</script>
 
 <!-- JavaScript Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -532,6 +490,7 @@
 <script src="<c:url value="template/tour/lib/owlcarousel/owl.carousel.min.js"/>"></script>
 <script src="<c:url value="template/tour/lib/lightbox/js/lightbox.min.js"/>"></script>
 
+<script src="<c:url value="template/tour/ajax-render/tour-render.js"/>"></script>
 
 <!-- Template Javascript -->
 <script src="<c:url value="template/tour/js/main.js"/>"></script>

@@ -7,10 +7,7 @@ public class OrderTour {
     private int customerId;
     private double total;
     private String note;
-    private Date createAt;
-    private String createdBy;
-    private Date modifiedAt;
-    private String modifiedBy;
+    private String paymentTransactionId;
 
     public int getId() {
         return id;
@@ -44,35 +41,22 @@ public class OrderTour {
         this.note = note;
     }
 
-    public Date getCreateAt() {
-        return createAt;
+    public String getPaymentTransactionId() {
+        return paymentTransactionId;
     }
 
-    public void setCreateAt(Date createAt) {
-        this.createAt = createAt;
+    public void setPaymentTransactionId(String paymentTransactionId) {
+        this.paymentTransactionId = paymentTransactionId;
     }
 
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public Date getModifiedAt() {
-        return modifiedAt;
-    }
-
-    public void setModifiedAt(Date modifiedAt) {
-        this.modifiedAt = modifiedAt;
-    }
-
-    public String getModifiedBy() {
-        return modifiedBy;
-    }
-
-    public void setModifiedBy(String modifiedBy) {
-        this.modifiedBy = modifiedBy;
+    @Override
+    public String toString() {
+        return "OrderTour{" +
+                "id=" + id +
+                ", customerId=" + customerId +
+                ", total=" + total +
+                ", note='" + note + '\'' +
+                ", paymentTransactionId='" + paymentTransactionId + '\'' +
+                '}';
     }
 }

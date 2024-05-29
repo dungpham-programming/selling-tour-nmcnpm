@@ -42,6 +42,32 @@ public class TourDAO implements IDao<Tour> {
         return tours;
     }
 
+    @Override
+    public Tour getById(int id) {
+        Tour tour = null;
+        String sql = "SELECT * FROM tours WHERE id = ?";
+
+        Connection conn = null;
+        PreparedStatement preStat = null;
+        ResultSet rs = null;
+
+        try {
+            conn = ConfigConnectionUtil.getConnection();
+            preStat = conn.prepareStatement(sql);
+            SetParameterUtil.setParameter(preStat, id);
+            rs = preStat.executeQuery();
+
+            if (rs.next()) {
+                tour = MapperData.mappingTour(rs);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            ConfigConnectionUtil.closeResource(conn, preStat, rs);
+        }
+        return tour;
+    }
+
     public List<TourDate> getDatesByTourId(int tourId) {
         List<TourDate> tourDates = new ArrayList<>();
         String sql = "SELECT * FROM tour_dates WHERE tourId = ?";

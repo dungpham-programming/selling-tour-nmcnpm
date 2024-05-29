@@ -1,6 +1,7 @@
 package com.nmcnpm.service.impl;
 
 import com.nmcnpm.dao.impl.TourDAO;
+import com.nmcnpm.model.Image;
 import com.nmcnpm.model.Tour;
 import com.nmcnpm.model.TourDate;
 import com.nmcnpm.service.intf.IService;
@@ -18,7 +19,12 @@ public class TourService implements IService<Tour> {
             List<TourDate> tourDates = tourDAO.getDatesByTourId(tour.getId());
             tour.setTourDates(tourDates);
         }
-        System.out.println(tours);
         return tours;
+    }
+
+    @Override
+    public Tour getById(int id) {
+        Tour tour = tourDAO.getById(id);
+        return tour;
     }
 }

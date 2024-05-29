@@ -1,4 +1,8 @@
-package com.nmcnpm.model;
+package com.nmcnpm.payment.model;
+
+import com.nmcnpm.model.Image;
+import com.nmcnpm.model.TourDate;
+import com.nmcnpm.model.TourReview;
 
 import java.sql.Date;
 import java.util.List;

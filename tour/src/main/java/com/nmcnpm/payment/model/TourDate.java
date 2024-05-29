@@ -1,4 +1,4 @@
-package com.nmcnpm.model;
+package com.nmcnpm.payment.model;
 
 import java.sql.Date;
 

@@ -1,8 +1,8 @@
-package com.nmcnpm.dao;
+package com.nmcnpm.payment.dao;
 
-import com.nmcnpm.mapping.MapperData;
-import com.nmcnpm.model.OrderTour;
-import com.nmcnpm.util.ConfigConnectionUtil;
+import com.nmcnpm.payment.mapping.MapperData;
+import com.nmcnpm.payment.model.OrderTour;
+import com.nmcnpm.payment.util.ConfigConnectionUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

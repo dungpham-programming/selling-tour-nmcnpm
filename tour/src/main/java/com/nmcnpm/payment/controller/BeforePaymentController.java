@@ -1,7 +1,7 @@
-package com.nmcnpm;
+package com.nmcnpm.payment.controller;
 
-import com.nmcnpm.dao.OrderTourDAO;
-import com.nmcnpm.model.OrderTour;
+import com.nmcnpm.payment.dao.OrderTourDAO;
+import com.nmcnpm.payment.model.OrderTour;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,7 +30,7 @@ public class BeforePaymentController extends HttpServlet {
                 e.printStackTrace();
             }
         } else {
-            resp.sendRedirect("./payment.jsp");
+            resp.sendRedirect("./beforePayment.jsp");
         }
     }
 }

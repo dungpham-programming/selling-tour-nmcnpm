@@ -1,12 +1,13 @@
-package com.nmcnpm;
+package com.nmcnpm.payment.controller;
 
-import com.nmcnpm.dao.CustomerDAO;
-import com.nmcnpm.dao.OrderTourDAO;
-import com.nmcnpm.dao.TransactionDAO;
-import com.nmcnpm.model.OrderTour;
-import com.nmcnpm.model.Transaction;
-import com.nmcnpm.service.MailService;
-import com.nmcnpm.service.PaymentAPI;
+
+import com.nmcnpm.payment.dao.CustomerDAO;
+import com.nmcnpm.payment.dao.OrderTourDAO;
+import com.nmcnpm.payment.dao.TransactionDAO;
+import com.nmcnpm.payment.model.OrderTour;
+import com.nmcnpm.payment.model.Transaction;
+import com.nmcnpm.payment.service.MailService;
+import com.nmcnpm.payment.service.PaymentAPI;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

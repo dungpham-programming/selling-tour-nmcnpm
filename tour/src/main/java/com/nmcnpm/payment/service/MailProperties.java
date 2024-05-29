@@ -1,4 +1,4 @@
-package com.nmcnpm.service;
+package com.nmcnpm.payment.service;
 
 import java.io.IOException;
 import java.util.Properties;

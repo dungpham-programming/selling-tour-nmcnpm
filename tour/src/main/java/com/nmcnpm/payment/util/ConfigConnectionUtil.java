@@ -1,4 +1,4 @@
-package com.nmcnpm.util;
+package com.nmcnpm.payment.util;
 
 import java.sql.*;
 import java.util.ResourceBundle;

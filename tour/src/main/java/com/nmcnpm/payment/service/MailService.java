@@ -1,6 +1,6 @@
-package com.nmcnpm.service;
+package com.nmcnpm.payment.service;
 
-import com.nmcnpm.model.OrderTour;
+import com.nmcnpm.payment.model.OrderTour;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

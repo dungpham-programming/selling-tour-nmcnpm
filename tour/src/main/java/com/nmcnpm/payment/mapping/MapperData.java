@@ -1,11 +1,8 @@
-package com.nmcnpm.mapping;
+package com.nmcnpm.payment.mapping;
 
-import com.nmcnpm.model.OrderTour;
-import com.nmcnpm.model.Tour;
-import com.nmcnpm.model.TourDate;
-import com.nmcnpm.model.Transaction;
+import com.nmcnpm.payment.model.OrderTour;
+import com.nmcnpm.payment.model.Transaction;
 
-import javax.naming.ldap.SortResponseControl;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

@@ -1,6 +1,6 @@
-package com.nmcnpm.service;
+package com.nmcnpm.payment.service;
 
-import com.nmcnpm.model.Transaction;
+import com.nmcnpm.payment.model.Transaction;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

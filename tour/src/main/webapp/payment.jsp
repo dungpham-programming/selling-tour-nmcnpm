@@ -1,5 +1,5 @@
-<%@ page import="com.nmcnpm.model.OrderTour" %>
-<%@ page import="com.nmcnpm.model.Transaction" %>
+<%@ page import="com.nmcnpm.payment.model.OrderTour" %>
+<%@ page import="com.nmcnpm.payment.model.Transaction" %>
 <%@ page import="java.util.UUID" %>
 <%OrderTour orderTour = (OrderTour) request.getAttribute("orderTour");%>
 <%

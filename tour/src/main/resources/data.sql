@@ -49,13 +49,13 @@ VALUES
 -- Thêm dữ liệu vào bảng transaction
 INSERT INTO `transaction` (`id`, `amount`, `paymentMethod`, `currency`, `transactionStatus`, `transactionTime`, `transferorName`)
 VALUES
-    ('TXN001', 150.00, 'Credit Card', 'USD', 'Completed', '2024-05-20 12:30:00', 'John Doe'),
+    ('TXN001', 150.00, 'Credit Card', 'USD', 'Success', '2024-05-20 12:30:00', 'John Doe'),
     ('TXN002', 200.00, 'PayPal', 'USD', 'Pending', '2024-05-21 15:45:00', 'Jane Smith'),
-    ('TXN003', 75.00, 'Bank Transfer', 'USD', 'Completed', '2024-05-22 10:00:00', 'Emily Johnson');
+    ('TXN003', 75.00, 'Bank Transfer', 'USD', 'Success', '2024-05-22 10:00:00', 'Emily Johnson');
 
 -- Thêm dữ liệu vào bảng order_tours
 INSERT INTO `order_tours` (`customerId`, `total`, `note`, `slotQuantity`, `paymentTransactionId`)
 VALUES
     (1, 500.00, 'Tour to Hawaii', 2, 'TXN001'),
-    (2, 300.00, 'Tour to Bali', 1, 'TXN002'),
-    (3, 150.00, 'Tour to Vietnam', 3, 'TXN003');
+    (2, 300.00, 'Tour to Bali', 1, null),
+    (3, 150.00, 'Tour to Vietnam', 3, null);

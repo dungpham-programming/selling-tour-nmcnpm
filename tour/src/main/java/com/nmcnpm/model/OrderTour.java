@@ -9,6 +9,17 @@ public class OrderTour {
     private String note;
     private String paymentTransactionId;
 
+    public OrderTour() {
+    }
+
+    public OrderTour(int id, int customerId, double total, String note, String paymentTransactionId) {
+        this.id = id;
+        this.customerId = customerId;
+        this.total = total;
+        this.note = note;
+        this.paymentTransactionId = paymentTransactionId;
+    }
+
     public int getId() {
         return id;
     }

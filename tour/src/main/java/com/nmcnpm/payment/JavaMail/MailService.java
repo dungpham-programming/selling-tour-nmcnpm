@@ -48,15 +48,16 @@ public class MailService {
     public static void sendNotifyPayment(String to, OrderTour orderTour) {
         MailService emailService = new MailService();
         emailService.send(to,
-                "Thông tin Tour",
-                "Chào bạn, chúng tôi hy vọng email này sẽ đến được với bạn." +
+                "Thông báo Tour",
+                "Bạn đã thanh toán thành công!" +
                         "<br> Vui lòng liên hệ với chúng tôi nếu bạn có thêm bất kỳ câu hỏi nào hoặc " +
-                        "cần hỗ trợ tìm kiếm sản phẩm thay thế. " +
+                        "cần hỗ trợ . " +
                         "Chúng tôi đánh giá cao sự hỗ trợ của bạn và mong được phục vụ bạn trong tương lai." +
-                        "<br><strong>Handmadestore</strong>");
+                        "<br><strong>Tour</strong>");
     }
 
     public static void main(String[] args) {
-
+        MailService emailService = new MailService();
+        emailService.send("lungbaphe772003@gmail.com","test","hehe");
     }
 }

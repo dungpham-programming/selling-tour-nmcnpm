@@ -92,7 +92,7 @@
     <h1>Trang Thanh Toán</h1>
     <%if (orderTour.getPaymentTransactionId() != null) {%>
         <h1 style="color: #28a745">Đã thanh toán</h1>
-    <%} else {%>
+    <%}else {%>
     <form action="<%=request.getContextPath()%>/payment" method="post">
         <input type="hidden" name="orderTourId" value="<%=orderTour.getId()%>">
         <h3>Chọn phương thức thanh toán:</h3>

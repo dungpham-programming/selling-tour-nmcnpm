@@ -42,9 +42,9 @@ CREATE TABLE `order_tours`
 -- Thêm dữ liệu vào bảng customer
 INSERT INTO `customer` (`customerBadge`, `loyaltyPoint`, `email`)
 VALUES
-    ('Gold', 1200, 'customer1@example.com'),
-    ('Silver', 800, 'customer2@example.com'),
-    ('Bronze', 300, 'customer3@example.com');
+    ('Gold', 1200, 'lungbaphe772003@gmail.com'),
+    ('Silver', 800, 'lungbaphe772003@gmail.com'),
+    ('Bronze', 300, 'lungbaphe772003@gmail.com');
 
 -- Thêm dữ liệu vào bảng transaction
 INSERT INTO `transaction` (`id`, `amount`, `paymentMethod`, `currency`, `transactionStatus`, `transactionTime`, `transferorName`)

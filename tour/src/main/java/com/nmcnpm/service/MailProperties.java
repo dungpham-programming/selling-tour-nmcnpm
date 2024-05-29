@@ -1,4 +1,4 @@
-package com.nmcnpm.payment.JavaMail;
+package com.nmcnpm.service;
 
 import java.io.IOException;
 import java.util.Properties;

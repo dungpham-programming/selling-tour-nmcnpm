@@ -1,4 +1,4 @@
-package com.nmcnpm.payment.JavaMail;
+package com.nmcnpm.service;
 
 import com.nmcnpm.model.OrderTour;
 

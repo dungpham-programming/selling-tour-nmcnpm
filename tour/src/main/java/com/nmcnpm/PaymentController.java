@@ -5,7 +5,8 @@ import com.nmcnpm.dao.OrderTourDAO;
 import com.nmcnpm.dao.TransactionDAO;
 import com.nmcnpm.model.OrderTour;
 import com.nmcnpm.model.Transaction;
-import com.nmcnpm.payment.JavaMail.MailService;
+import com.nmcnpm.service.MailService;
+import com.nmcnpm.service.PaymentAPI;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,8 +14,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.time.LocalTime;
-import java.util.UUID;
 
 @WebServlet("/payment")
 public class PaymentController extends HttpServlet {
@@ -43,7 +42,8 @@ public class PaymentController extends HttpServlet {
                 resp.setCharacterEncoding("UTF-8");
                 resp.setContentType("text/html");
                 OrderTour orderTour = OrderTourDAO.getOrderTourById(Integer.parseInt(orderTourId));
-                Transaction paymentAPIResult = getTransactionFromPaymentAPI(req, resp);
+//                notify: giả sử API gọi đươc kết quả
+                Transaction paymentAPIResult = PaymentAPI.getTransactionFromPaymentAPI(req, resp);
                 if (paymentAPIResult != null && paymentAPIResult.getTransactionStatus().equals("Success")) {
 //                    send mail
                     String email = CustomerDAO.getEmail(orderTour.getCustomerId());
@@ -60,30 +60,6 @@ public class PaymentController extends HttpServlet {
                 e.printStackTrace();
             }
         }
-    }
-
-    public Transaction getTransactionFromPaymentAPI(HttpServletRequest req, HttpServletResponse resp) {
-        try {
-            String id = UUID.randomUUID().toString().replaceAll("-", "").substring(0, 8);
-            double amount = Double.parseDouble(req.getParameter("amount"));
-            String paymentMethod = req.getParameter("paymentMethod");
-            String currency = req.getParameter("currency");
-            String submit = req.getParameter("submit");
-            String transactionStatus;
-            if (submit != null && submit.equals("success")) {
-                transactionStatus = "Success";
-            } else {
-                transactionStatus = "Fail";
-            }
-            String transactionTime = LocalTime.now().toString();
-            String transferorName = UUID.randomUUID().toString().replaceAll("-", "").substring(0, 1);
-
-            Transaction transaction = new Transaction(id, paymentMethod, amount, currency, transactionStatus, transactionTime, transferorName);
-            return transaction;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 }
 

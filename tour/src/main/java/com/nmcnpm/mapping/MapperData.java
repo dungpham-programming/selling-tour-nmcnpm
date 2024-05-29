@@ -1,5 +1,6 @@
 package com.nmcnpm.mapping;
 
+import com.nmcnpm.model.Image;
 import com.nmcnpm.model.Tour;
 import com.nmcnpm.model.TourDate;
 
@@ -44,5 +45,20 @@ public class MapperData {
             throw new RuntimeException(e);
         }
         return tourDate;
+    }
+
+    public static Image mappingImage(ResultSet rs) {
+        Image image = new Image();
+
+        try {
+            image.setId(rs.getInt("id"));
+            image.setTourId(rs.getInt("tourId"));
+            image.setName(rs.getString("name"));
+            image.setUrl(rs.getString("url"));
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return image;
     }
 }

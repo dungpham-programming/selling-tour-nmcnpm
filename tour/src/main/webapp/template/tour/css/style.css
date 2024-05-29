@@ -1260,3 +1260,25 @@ h1, h5 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.row-description, .timeline {
+    white-space: break-spaces;
+}
+
+.text-strong-color-black {
+    font-weight: bold;
+    color: black;
+}
+
+.btn.btn-primary.book {
+    margin-left: 0 !important;
+}
+
+.btn.btn-primary.book:hover {
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.timeline strong {
+    color: black;
+}

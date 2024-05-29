@@ -2,6 +2,7 @@ package com.nmcnpm.model;
 
 public class Image {
     private int id;
+    private int tourId;
     private String name;
     private String url;
 
@@ -11,6 +12,14 @@ public class Image {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getTourId() {
+        return tourId;
+    }
+
+    public void setTourId(int tourId) {
+        this.tourId = tourId;
     }
 
     public String getName() {

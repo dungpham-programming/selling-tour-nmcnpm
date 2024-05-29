@@ -1,5 +1,6 @@
 package com.nmcnpm.service.impl;
 
+import com.nmcnpm.dao.ImageDAO;
 import com.nmcnpm.dao.impl.TourDAO;
 import com.nmcnpm.model.Image;
 import com.nmcnpm.model.Tour;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class TourService implements IService<Tour> {
     private final TourDAO tourDAO = new TourDAO();
+    private final ImageDAO imageDAO = new ImageDAO();
 
     @Override
     public List<Tour> getAll() {
@@ -25,6 +27,8 @@ public class TourService implements IService<Tour> {
     @Override
     public Tour getById(int id) {
         Tour tour = tourDAO.getById(id);
+        List<Image> images = imageDAO.getByTourId(id);
+        tour.setImages(images);
         return tour;
     }
 }

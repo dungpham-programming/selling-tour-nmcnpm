@@ -1,12 +1,11 @@
-package com.nmcnpm.model.impl;
+package com.nmcnpm.payment.model.user;
 
 import com.nmcnpm.model.OrderTour;
 import com.nmcnpm.model.TourReview;
-import com.nmcnpm.model.abs.BaseUser;
 
 import java.util.List;
 
-public class Customer extends BaseUser {
+public class Customer {
     private String customerBadge;
     private int loyaltyPoint;
     private List<OrderTour> orderTours;

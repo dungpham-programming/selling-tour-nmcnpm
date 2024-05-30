@@ -1,6 +1,4 @@
-package com.nmcnpm.model;
-
-import java.sql.Date;
+package com.nmcnpm.payment.model;
 
 public class OrderTour {
     private int id;
